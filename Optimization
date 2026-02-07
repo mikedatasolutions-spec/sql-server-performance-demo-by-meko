@@ -1,56 +1,10 @@
-# SQL Server Performance & ETL Demo
-## Meko Data Solutions
+-- BEFORE optimization (slow)
+SELECT * FROM Sales WHERE CustomerName LIKE '%Customer1%';
 
-This repository demonstrates Microsoft SQL Server optimization, ETL automation,
-and reporting solutions designed for small businesses.
-----
-## Business Problem
-Many small businesses face:
-- Slow SQL Server performance
-- Poor indexing and inefficient queries
-- Manual Excel-based reporting
-- No proper ETL or automation
+-- Optimization
+CREATE NONCLUSTERED INDEX IDX_Sales_CustomerName
+ON Sales(CustomerName);
 
----
+-- AFTER optimization
+SELECT * FROM Sales WHERE CustomerName = 'Customer1';
 
-## Solution
-Meko Data Solutions provides:
-- SQL Server performance tuning
-- Query and index optimization
-- ETL automation using Python and SAS
-- Automated reporting pipelines
-
----
-
-## Technologies Used
-- Microsoft SQL Server
-- T-SQL
-- Python
-- SAS (ETL)
-- C# (.NET – optional tools)
-
----
-
-## Project Structure
-sql-server-performance-demo/
-├── Database/
-│ └── sample_data.sql
-├── Optimization/
-│ └── optimized_queries.sql
-├── Automation/
-│ └── etl_python.py
-├── SAS/
-│ └── etl_example.sas
-└── Screenshots/
----
-
-## Results
-- Query performance improved by 3x
-- Automated data loading and reporting
-- Reduced manual Excel dependency
-
----
-
-## About
-**Meko Data Solutions**  
-Microsoft SQL Server Optimization & Automation for Small Businesses
