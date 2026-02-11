@@ -81,4 +81,4 @@ Helping businesses make their databases faster, cleaner, and scalable.
 ## 🔍 Deep Dive Topics
 
 - [Query Refactoring & Performance Tuning](docs/query-refactoring-and-tuning.md)
-
+- [Index Analysis & Optimization](docs/indexing-strategies.md)
