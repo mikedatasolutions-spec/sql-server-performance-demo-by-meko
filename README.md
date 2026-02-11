@@ -75,3 +75,10 @@ sql-server-performance-demo/
 Specialized in SQL Server performance optimization, query tuning, and database efficiency for small–mid teams.
 
 Helping businesses make their databases faster, cleaner, and scalable.
+
+
+
+## 🔍 Deep Dive Topics
+
+- [Query Refactoring & Performance Tuning](docs/query-refactoring-and-tuning.md)
+
