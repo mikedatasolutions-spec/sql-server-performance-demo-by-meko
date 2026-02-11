@@ -1,9 +1,9 @@
-# sql-server-performance-demo-by-meko
-Demonstrates Microsoft SQL Server optimization and database automation for small businesses by Meko Data Solutions
+# SQL Server Performance Optimization & Automation.
+This repository demonstrates real-world SQL Server performance optimization, indexing strategy, and ETL automation techniques designed for small–mid sized teams.
 
 ------
-# SQL Server Performance & ETL Demo
-## Meko Data Solutions
+# SQL Server Performance Optimization & Automation.
+### Meko Data Solutions
 
 This repository demonstrates Microsoft SQL Server optimization, ETL automation,
 and reporting solutions designed for small businesses.
@@ -14,6 +14,18 @@ Many small businesses face:
 - Poor indexing and inefficient queries
 - Manual Excel-based reporting
 - No proper ETL or automation
+
+- ## ⚡ Optimization Approach
+
+Meko Data Solution focuses on improving database performance through:
+
+- Query refactoring and tuning
+- Index analysis and optimization
+- Execution plan review
+- Reducing full table scans
+- Improving join performance
+- Eliminating redundant operations
+- Automating ETL workflows
 
 ---
 
@@ -29,9 +41,9 @@ Meko Data Solutions provides:
 ## Technologies Used
 - Microsoft SQL Server
 - T-SQL
-- Python
-- SAS (ETL)
-- C# (.NET – optional tools)
+- Python (ETL automation)
+- SAS (Data Processing)
+- C# (.NET – supporting tools)
 
 ---
 
@@ -48,13 +60,18 @@ sql-server-performance-demo/
 └── Screenshots/
 ---
 
-## Results
-- Query performance improved by 3x
-- Automated data loading and reporting
-- Reduced manual Excel dependency
+## Results/Performance Impact
+- Query execution time reduced by up to **3x**
+- Improved indexing strategy
+- Reduced manual reporting effort
+- Structured ETL automation pipeline
+- Improved scalability for growing datasets
+
 
 ---
 
 ## About
 **Meko Data Solutions**  
-Microsoft SQL Server Optimization & Automation for Small Businesses
+Specialized in SQL Server performance optimization, query tuning, and database efficiency for small–mid teams.
+
+Helping businesses make their databases faster, cleaner, and scalable.
