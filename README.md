@@ -19,13 +19,13 @@ Many small businesses face:
 
 Meko Data Solution focuses on improving database performance through:
 
-- Query refactoring and tuning
-- Index analysis and optimization
-- Execution plan review
-- Reducing full table scans
-- Improving join performance
-- Eliminating redundant operations
-- Automating ETL workflows
+1- Query refactoring and tuning
+2- Index analysis and optimization
+3- Execution plan review
+4- Reducing full table scans
+5- Improving join performance
+6- Eliminating redundant operations
+7- Automating ETL workflows
 
 ---
 
