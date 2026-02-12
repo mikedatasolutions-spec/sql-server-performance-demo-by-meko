@@ -82,3 +82,4 @@ Helping businesses make their databases faster, cleaner, and scalable.
 
 - [Query Refactoring & Performance Tuning](docs/query-refactoring-and-tuning.md)
 - [Index Analysis & Optimization](docs/indexing-strategies.md)
+- [Impact of SARGABLE and Non-SARGABLE Queries](sargable-vs-non-sargable.md)
