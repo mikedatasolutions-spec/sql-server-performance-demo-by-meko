@@ -3,7 +3,7 @@ This repository demonstrates real-world SQL Server performance optimization, ind
 
 ------
 # SQL Server Performance Optimization & Automation.
-### Meko Data Solutions
+### Meko Data Solution
 
 This repository demonstrates Microsoft SQL Server optimization, ETL automation,
 and reporting solutions designed for small businesses.
