@@ -99,13 +99,14 @@ Index Fragmentation
 Index fragmentation occurs when the logical order of pages does not match the physical order.
 
 Types of Fragmentation
-Internal Fragmentation
+==============================================
+## Internal Fragmentation:
 
 Pages are not fully filled
 
 Wasted space inside pages
 
-External Fragmentation
+##External Fragmentation:
 
 Pages are out of order on disk
 
