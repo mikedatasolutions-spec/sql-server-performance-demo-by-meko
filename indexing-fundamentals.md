@@ -60,7 +60,9 @@ Everything in SQL Server is stored inside pages.
 ```sql
 CREATE CLUSTERED INDEX IX_Customers_ID
 ON Customers(ID);
+=============================================
 Non-Clustered Index
+==================================================
 Separate structure from table data
 
 Contains the indexed column(s) and a pointer to the row
@@ -69,6 +71,7 @@ You can create multiple non-clustered indexes
 
 CREATE NONCLUSTERED INDEX IX_Customers_HireDate
 ON Customers(Hire_Date);
+==================================================
 How Do We Use Indexes?
 Indexes improve performance for:
 
@@ -92,6 +95,7 @@ Indexed column → Index Seek
 Non-indexed column → Table Scan
 
 Index Fragmentation
+=============================================
 Index fragmentation occurs when the logical order of pages does not match the physical order.
 
 Types of Fragmentation
@@ -116,7 +120,7 @@ UPDATE
 DELETE
 
 Page splits (common with random keys like GUIDs)
-
+=============================================
 Page Splits
 When a page becomes full:
 
@@ -134,17 +138,16 @@ Extra I/O
 
 Performance overhead
 
-Index Rebuild vs Reorganize
-Operation	What It Does	When to Use	Notes
-Rebuild	Drops and recreates the index; removes fragmentation; updates statistics	Fragmentation > 30%	More resource-intensive, locks the index (unless using online rebuild)
-Reorganize	Defragments index pages; compacts pages; lightweight	Fragmentation 5–30%	Less resource-intensive, online operation
+
+================================================
 Key Difference:
 
 Fragmentation is the problem (disorder of pages)
 
 Rebuild/Reorganize is the solution (fixes fragmentation)
-
+========================================================
 How to Check Index Fragmentation
+
 Use sys.dm_db_index_physical_stats in SQL Server:
 
 SELECT
@@ -157,12 +160,13 @@ ON ips.object_id = i.object_id
 AND ips.index_id = i.index_id
 WHERE ips.avg_fragmentation_in_percent > 5
 ORDER BY ips.avg_fragmentation_in_percent DESC;
+===============================================
 < 5% → No action needed
 
 5–30% → Consider REORGANIZE
 
 > 30% → Consider REBUILD
-
+===============================================
 When Should You Create an Index?
 Create an index when:
 
@@ -183,7 +187,7 @@ Column has low selectivity (e.g., Gender)
 Column is frequently updated
 
 Too many indexes exist
-
+=========================================================
 Important Trade-Offs
 Indexes:
 
@@ -192,17 +196,18 @@ Indexes:
 ❌ Consume additional disk space
 
 Because every time data changes, related indexes must also update.
-
+==================================================================
 Summary
 Concept	Description
-Index	Improves data retrieval speed
-Clustered Index	Controls physical data order
-Non-Clustered Index	Separate structure with pointer to data
-Page	8 KB storage unit
-Fragmentation	Logical order differs from physical order
-Rebuild	Recreates index completely
-Reorganize	Light defragmentation
-Check Fragmentation	sys.dm_db_index_physical_stats
+Index	  :       Improves data retrieval speed
+Clustered Index	:  Controls physical data order
+Non-Clustered Index :	Separate structure with pointer to data
+Page	 : 8 KB storage unit
+Fragmentation : Logical order differs from physical order
+Rebuild	:       Recreates index completely
+Reorganize	:   Light defragmentation
+Check Fragmentation :  	sys.dm_db_index_physical_stats
+=================================================================
 Final Thought
 Proper indexing is one of the most important factors in database performance tuning.
 Understanding fragmentation and knowing when to rebuild or reorganize indexes ensures high-performance, scalable database systems.
