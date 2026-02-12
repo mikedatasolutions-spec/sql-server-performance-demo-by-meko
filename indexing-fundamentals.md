@@ -120,7 +120,8 @@ UPDATE
 
 DELETE
 
-Page splits (common with random keys like GUIDs)
+Page splits (common with random keys like GUIDs: Globally Unique Identifier).
+ GUID: it's a 128-bit value used to uniquely identify something in a database  or application.
 =============================================
 Page Splits
 When a page becomes full:
